@@ -10,7 +10,7 @@ exports.store = function(req, res, next) {
       next();
     }
   });
-}
+};
 
 exports.load = function(req, res, next) {
   db.get(req.params.token, function(err, link) {
@@ -25,4 +25,4 @@ exports.load = function(req, res, next) {
       next();
     }
   });
-}
+};
